@@ -1,0 +1,24 @@
+{
+  "name": "react-component-base",
+  "version": "0.0.1",
+  "description": "Base for another react components to the project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/e-project/react-component-base.git"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "base"
+  ],
+  "author": "Willian Justen de Vasconcellos <willianjustenqui@gmail.com> (http://willianjusten.com.br/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/e-project/react-component-base/issues"
+  },
+  "homepage": "https://gitlab.com/e-project/react-component-base#README"
+}
