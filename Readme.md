@@ -1,5 +1,9 @@
 # React component base
 
+## Stack
+
+- [React, React-DOM and React-addons-test-utils 0.14](https://facebook.github.io/react/blog/2015/10/07/react-v0.14.html)
+
 ## Getting Started
 
 Install all dependencies using `npm install`.
