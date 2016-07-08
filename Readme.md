@@ -28,4 +28,5 @@ This project also uses [Husky](https://github.com/typicode/husky) to prevent pus
 
 ### Tasks
 
-*soon*
+* `npm run lint`: lint all files searching for errors.
+* `npm run fix`: fix some lint errors.
