@@ -4,10 +4,11 @@
     "es6": true
   },
   "ecmaFeatures": {
-    "modules": true,
-    "jsx": true
+    "modules": true
   },
   "rules": {
-    "id-length": 0
+    "indent": ["error", 4],
+    "id-length": 0,
+    "react/jsx-indent": [2, 4]
   }
 }
