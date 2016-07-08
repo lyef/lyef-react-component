@@ -6,7 +6,7 @@
   "scripts": {
     "test": "",
     "lint": "./node_modules/.bin/eslint src",
-    "fix": "./node_modules/.bin/eslint src --fix",
+    "lint:fix": "./node_modules/.bin/eslint src --fix",
     "prepush": "npm run lint && npm test"
   },
   "repository": {
