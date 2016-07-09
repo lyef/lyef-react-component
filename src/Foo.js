@@ -1,11 +1,15 @@
 import React from 'react';
 
-const Foo = () => (
+const Foo = ({ itens }) => (
     <ul className="foo">
-        <li className="bar">1</li>
-        <li className="bar">2</li>
-        <li className="bar">3</li>
+        {itens.map((item, index) => (
+            <li className="bar" key={index}>{item}</li>
+        ))}
     </ul>
 );
+
+Foo.propTypes = {
+    itens: React.PropTypes.array.isRequired,
+};
 
 export default Foo;
