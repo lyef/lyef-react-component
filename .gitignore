@@ -5,6 +5,8 @@
 # Logs
 logs
 *.log
+.nyc_output
+coverage/
 
 # Runtime data
 pids
@@ -39,7 +41,8 @@ npm-debug.log
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
