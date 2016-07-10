@@ -2,18 +2,23 @@
 
 ## Stack
 
-- [React, React-DOM and React-addons-test-utils 0.14](https://facebook.github.io/react/blog/2015/10/07/react-v0.14.html)
+- [React/React-DOM/React-addons-test-utils](https://facebook.github.io/react/blog/2015/10/07/react-v0.14.html)
+- [Babel 6](https://babeljs.io/) - Javascript Compiler.
+- [React Storybook](https://github.com/kadirahq/react-storybook) - Isolated environment for your components.
+- [Eslint](http://eslint.org/) - The pluggable linting utility for JavaScript and JSX.
+- [Husky](https://github.com/typicode/husky) - Git hooks made easy.
+- [Mocha](https://mochajs.org/) - JavaScript test framework.
+- [Chai](http://chaijs.com/) - BDD / TDD assertion library.
+- [Sinon](http://sinonjs.org/) - Standalone test spies, stubs and mocks for JavaScript.
+- [Nyc](https://github.com/istanbuljs/nyc) - Istanbul command line interface.
+- [Enzyme](http://airbnb.io/enzyme/) - JavaScript Testing utility for React.
+- [JSDOM](https://github.com/tmpvar/jsdom) - A JavaScript implementation of the WHATWG DOM and HTML standards.
 
 ## Getting Started
-
-Install all dependencies using `npm install`.
 
 ### Installation
 
 First of all, install the dependencies to run this boilerplate.
-
-- [NodeJS](http://nodejs.org/)
-- [GulpJS](http://gulpjs.com/)
 
 ```sh
 # install dependencies
@@ -22,7 +27,34 @@ $ npm install
 
 ### Folders and Files
 
-*soon*
+```sh
+├── .storybook
+│   └── config.js
+├── dist
+│   └── Foo.js
+├── src
+│   └── Foo.js
+├── stories
+│   └── Foo.js
+├── tests
+│   ├── helpers
+│   │   └── setup.js
+│   └── specs
+│       └── Foo.spec.js
+├── .babelrc
+├── .editorconfig
+├── .eslintrc
+├── .gitignore
+├── .npmignore
+├── Readme.md
+└── package.json
+```
+
+### How to Develop with Storybook
+
+Create your [storybook stories](https://github.com/kadirahq/react-storybook/blob/master/docs/writing_stories.md) on `stories` folder. If you want to create another story file, remember to load on `.storybook/config.js`. With all stories, just run `npm run storybook` to open your isolated environment.
+
+If you want to know more about storybook, [see this link](https://github.com/kadirahq/react-storybook).
 
 ### Code Standarts
 
@@ -32,5 +64,10 @@ This project also uses [Husky](https://github.com/typicode/husky) to prevent pus
 
 ### Tasks
 
+* `npm run build`: build component to external use.
+* `npm run storybook`: launch storybook to develop your component.
+* `npm run test`: run all specs.
+* `npm run test:tdd`: run all specs and watch.
+* `npm run test:coverage`: run all specs and coverage.
 * `npm run lint`: lint all files searching for errors.
-* `npm run fix`: fix some lint errors.
+* `npm run lint:fix`: fix some lint errors.
