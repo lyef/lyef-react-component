@@ -2,8 +2,10 @@
   "name": "react-component-base",
   "version": "0.0.1",
   "description": "Base for another react components to the project.",
-  "main": "index.js",
+  "main": "dist/Foo.js",
   "scripts": {
+    "build": "npm run clean && babel src -d dist",
+    "clean": "rimraf dist",
     "test": "./node_modules/.bin/mocha --require tests/helpers/setup.js tests/specs/**/*.spec.js",
     "test:tdd": "./node_modules/.bin/mocha --require tests/helpers/setup.js tests/specs/**/*.spec.js -w",
     "test:coverage": "./node_modules/.bin/nyc ./node_modules/.bin/mocha tests/helpers/setup.js tests/specs/**/*.spec.js",
@@ -46,6 +48,7 @@
     "mocha": "^2.5.3",
     "nyc": "^7.0.0",
     "react-addons-test-utils": "^0.14.8",
+    "rimraf": "^2.5.3",
     "sinon": "^1.17.4"
   },
   "dependencies": {
