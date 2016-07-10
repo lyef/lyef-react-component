@@ -2,6 +2,7 @@ import React from 'react';
 import { expect } from 'chai';
 import { shallow } from 'enzyme';
 import Foo from '../../src/Foo';
+import assertEqualJSX from 'assert-equal-jsx';
 
 describe('Component Foo', () => {
 
@@ -23,5 +24,14 @@ describe('Component Foo', () => {
     it('should have children with class named bar', () => {
         const wrapper = shallow(<Foo itens={[1]} />);
         expect(wrapper.children().is('.bar')).to.equal(true);
+    });
+
+    it('should create a correct DOM structure', () => {
+        const componentMock = (
+            <ul className='foo'>
+                <li className="bar">1</li>
+            </ul>
+        );
+        assertEqualJSX(<Foo itens={[1]} />, componentMock);
     });
 });
