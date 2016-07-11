@@ -1,6 +1,6 @@
 import React from 'react';
 import Foo from '../src/Foo'; // This is our component
-import { storiesOf, action } from '@kadira/storybook';
+import { storiesOf } from '@kadira/storybook';
 
 storiesOf('Foo', module)
   .add('with 1 item', () => (
