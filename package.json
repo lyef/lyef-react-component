@@ -30,6 +30,7 @@
   },
   "homepage": "https://gitlab.com/e-project/react-component-base#README",
   "devDependencies": {
+    "@kadira/storybook": "^1.38.0",
     "assert-equal-jsx": "^1.0.3",
     "babel-core": "^6.10.4",
     "babel-loader": "^6.2.4",
@@ -53,7 +54,6 @@
     "sinon": "^1.17.4"
   },
   "dependencies": {
-    "@kadira/storybook": "^1.37.0",
     "react": "^0.14.0",
     "react-dom": "^0.14.0"
   }
