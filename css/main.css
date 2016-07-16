@@ -1,0 +1,13 @@
+.foo {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bar {
+    font-size: 24px;
+    background: blue;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
