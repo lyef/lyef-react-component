@@ -6,6 +6,12 @@
   "ecmaFeatures": {
     "modules": true
   },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "15.0"
+    }
+  },
   "rules": {
     "indent": ["error", 4],
     "id-length": 0,
