@@ -39,11 +39,11 @@ $ npm install
 ├── storybook
 │   ├── config.js
 │   └── webpack.config.js
-└── tests
-    ├── helpers
-    │   └── setup.js
-    └── specs
-        └── Foo.spec.js
+├── tests
+│   ├── helpers
+│   │   └── setup.js
+│   └── specs
+│       └── Foo.spec.js
 ├── .babelrc
 ├── .editorconfig
 ├── .eslintrc
