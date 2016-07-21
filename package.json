@@ -1,6 +1,6 @@
 {
   "name": "react-component-base",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "An opinionated structure for reusable and declouped react components.",
   "main": "dist/Foo.js",
   "scripts": {
