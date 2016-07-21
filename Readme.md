@@ -2,7 +2,7 @@
 
 ## Stack
 
-- [React/React-DOM/React-addons-test-utils](https://facebook.github.io/react/blog/2015/10/07/react-v0.14.html)
+- [React/React-DOM/React-addons-test-utils 15.x](https://facebook.github.io/react/)
 - [Babel 6](https://babeljs.io/) - Javascript Compiler.
 - [React Storybook](https://github.com/kadirahq/react-storybook) - Isolated environment for your components.
 - [Eslint](http://eslint.org/) - The pluggable linting utility for JavaScript and JSX.
@@ -28,19 +28,22 @@ $ npm install
 ### Folders and Files
 
 ```sh
-├── .storybook
-│   └── config.js
+├── css
+│   └── main.css
 ├── dist
 │   └── Foo.js
 ├── src
 │   └── Foo.js
 ├── stories
 │   └── Foo.js
-├── tests
-│   ├── helpers
-│   │   └── setup.js
-│   └── specs
-│       └── Foo.spec.js
+├── storybook
+│   ├── config.js
+│   └── webpack.config.js
+└── tests
+    ├── helpers
+    │   └── setup.js
+    └── specs
+        └── Foo.spec.js
 ├── .babelrc
 ├── .editorconfig
 ├── .eslintrc

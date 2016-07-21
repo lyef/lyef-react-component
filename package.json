@@ -1,7 +1,7 @@
 {
   "name": "react-component-base",
-  "version": "0.0.1",
-  "description": "Base for another react components to the project.",
+  "version": "1.0.0",
+  "description": "An opinionated structure for reusable and declouped react components.",
   "main": "dist/Foo.js",
   "scripts": {
     "build": "npm run clean && babel src -d dist",
@@ -50,13 +50,13 @@
     "mocha": "^2.5.3",
     "nyc": "^7.0.0",
     "raw-loader": "^0.5.1",
-    "react-addons-test-utils": "^0.14.8",
+    "react-addons-test-utils": "^15.2.1",
     "rimraf": "^2.5.3",
     "sinon": "^1.17.4",
     "style-loader": "^0.13.1"
   },
   "dependencies": {
-    "react": "^0.14.0",
-    "react-dom": "^0.14.0"
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1"
   }
 }
