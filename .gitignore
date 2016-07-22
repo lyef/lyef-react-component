@@ -8,6 +8,9 @@ logs
 .nyc_output
 coverage/
 
+# build
+.out
+
 # Runtime data
 pids
 *.pid

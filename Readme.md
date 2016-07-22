@@ -69,6 +69,8 @@ This project also uses [Husky](https://github.com/typicode/husky) to prevent pus
 
 * `npm run build`: build component to external use.
 * `npm run storybook`: launch storybook to develop your component.
+* `npm run build-storybook`: build an static storybook to `.out` folder.
+* `npm run deploy-storybook`: build and deploy a storybook with component to gh-pages.
 * `npm run test`: run all specs.
 * `npm run test:tdd`: run all specs and watch.
 * `npm run test:coverage`: run all specs and coverage.
