@@ -1,4 +1,5 @@
-# React component base
+# React base component
+[![Build Status](https://travis-ci.org/willianjusten/react-base-component.svg)](https://travis-ci.org/willianjusten/react-base-component)
 
 ## Stack
 
