@@ -5,7 +5,7 @@
 3. Commit your changes: `git commit -m 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 
-*Remember, you only call pull if your tests and lint pass.*
+*Remember that we have a pre-push hook with steps that analyzes and prevents mistakes.*
 
 **After your pull request is merged**, you can safely delete your branch.
 
