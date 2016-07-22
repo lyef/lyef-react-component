@@ -2,9 +2,9 @@
   "name": "react-component-base",
   "version": "0.1.0",
   "description": "An opinionated structure for reusable and declouped react components.",
-  "main": "dist/Foo.js",
+  "main": "dist/Counter.js",
   "scripts": {
-    "build": "npm run clean && babel src -d dist",
+    "build": "npm run clean && ./node_modules/.bin/babel src -d dist",
     "clean": "rimraf dist",
     "storybook": "./node_modules/.bin/start-storybook -p 9001 -c ./storybook",
     "test": "./node_modules/.bin/mocha --require tests/helpers/setup.js tests/specs/**/*.spec.js",
@@ -32,6 +32,7 @@
   "devDependencies": {
     "@kadira/storybook": "^1.38.0",
     "assert-equal-jsx": "^1.0.3",
+    "babel-cli": "^6.11.4",
     "babel-core": "^6.10.4",
     "babel-loader": "^6.2.4",
     "babel-preset-airbnb": "^2.0.0",
@@ -53,6 +54,7 @@
     "react-addons-test-utils": "^15.2.1",
     "rimraf": "^2.5.3",
     "sinon": "^1.17.4",
+    "sinon-chai": "^2.8.0",
     "style-loader": "^0.13.1"
   },
   "dependencies": {
