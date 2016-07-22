@@ -5,6 +5,7 @@
   "main": "dist/Counter.js",
   "scripts": {
     "build": "npm run clean && ./node_modules/.bin/babel src -d dist",
+    "pub": "npm run build && npm publish",
     "clean": "rimraf dist",
     "storybook": "./node_modules/.bin/start-storybook -p 9001 -c ./storybook",
     "build-storybook": "./node_modules/.bin/build-storybook -c ./storybook -o .out",
@@ -18,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/e-project/react-component-base.git"
+    "url": "git+ssh://git@github.com/willianjusten/react-component-base.git"
   },
   "keywords": [
     "react",
@@ -28,9 +29,9 @@
   "author": "Willian Justen de Vasconcellos <willianjustenqui@gmail.com> (http://willianjusten.com.br/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.com/e-project/react-component-base/issues"
+    "url": "https://github.com/willianjusten/react-component-base/issues"
   },
-  "homepage": "https://gitlab.com/e-project/react-component-base#README",
+  "homepage": "https://github.com/willianjusten/react-component-base#README",
   "devDependencies": {
     "@kadira/storybook": "^1.38.0",
     "assert-equal-jsx": "^1.0.3",
