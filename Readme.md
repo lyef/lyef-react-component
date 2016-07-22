@@ -74,3 +74,8 @@ This project also uses [Husky](https://github.com/typicode/husky) to prevent pus
 * `npm run test:coverage`: run all specs and coverage.
 * `npm run lint`: lint all files searching for errors.
 * `npm run lint:fix`: fix some lint errors.
+
+## License
+
+[MIT License](https://github.com/willianjusten/react-base-component/blob/master/LICENSE.md) @ [Willian Justen](https://willianjusten.com.br)
+
