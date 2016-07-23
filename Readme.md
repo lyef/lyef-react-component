@@ -1,5 +1,5 @@
 # Lyef React Component
-[![Build Status](https://travis-ci.org/willianjusten/react-base-component.svg)](https://travis-ci.org/willianjusten/react-base-component)
+[![Build Status](https://travis-ci.org/lyef/lyef-react-component.svg)](https://travis-ci.org/lyef/lyef-react-component/)
 
 ## Stack
 
