@@ -3,7 +3,7 @@ import { configure } from '@kadira/storybook';
 import '../css/main.css';
 
 function loadStories() {
-  require('../stories/Counter.js');
+  require('../stories/Component.js');
 }
 
 configure(loadStories, module);

@@ -1,12 +1,13 @@
 {
-  "name": "react-component-base",
+  "name": "lyef-react-component",
   "version": "0.1.0",
-  "description": "An opinionated structure for reusable and declouped react components.",
-  "main": "dist/Counter.js",
+  "description": "An opinionated boilerplate for reusable and declouped react components.",
+  "main": "dist/Component.js",
   "scripts": {
     "build": "npm run clean && ./node_modules/.bin/babel src -d dist",
     "pub": "npm run build && npm publish",
     "clean": "rimraf dist",
+    "start": "npm run storybook",
     "storybook": "./node_modules/.bin/start-storybook -p 9001 -c ./storybook",
     "build-storybook": "./node_modules/.bin/build-storybook -c ./storybook -o .out",
     "deploy-storybook": "storybook-to-ghpages",
@@ -19,19 +20,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/willianjusten/react-component-base.git"
+    "url": "git+ssh://git@github.com/lyef/lyef-react-component.git"
   },
   "keywords": [
     "react",
     "component",
     "base"
   ],
-  "author": "Willian Justen de Vasconcellos <willianjustenqui@gmail.com> (http://willianjusten.com.br/)",
+  "author": "lyef (http://lyef.github.io/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/willianjusten/react-component-base/issues"
+    "url": "https://github.com/lyef/lyef-react-component/issues"
   },
-  "homepage": "https://github.com/willianjusten/react-component-base#README",
+  "homepage": "https://github.com/lyef/lyef-react-component#README",
   "devDependencies": {
     "@kadira/storybook": "^1.38.0",
     "assert-equal-jsx": "^1.0.3",

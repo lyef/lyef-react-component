@@ -1,4 +1,4 @@
-# React base component
+# Lyef React Component
 [![Build Status](https://travis-ci.org/willianjusten/react-base-component.svg)](https://travis-ci.org/willianjusten/react-base-component)
 
 ## Stack
@@ -68,6 +68,7 @@ This project also uses [Husky](https://github.com/typicode/husky) to prevent pus
 
 ### Tasks
 
+* `npm start`: start to develop on storybook.
 * `npm run build`: build component to external use.
 * `npm run pub`: build and publish the component to npm.
 * `npm run storybook`: launch storybook to develop your component.
@@ -81,5 +82,4 @@ This project also uses [Husky](https://github.com/typicode/husky) to prevent pus
 
 ## License
 
-[MIT License](https://github.com/willianjusten/react-base-component/blob/master/LICENSE.md) @ [Willian Justen](https://willianjusten.com.br)
-
+[MIT License](https://github.com/lyef/lyef-react-component/blob/master/LICENSE.md) @ [lyef](https://lyef.github.io)
