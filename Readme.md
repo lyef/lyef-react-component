@@ -31,12 +31,10 @@ $ npm install
 ```sh
 ├── css
 │   └── main.css
-├── dist
-│   └── Foo.js
 ├── src
-│   └── Foo.js
+│   └── Component.js
 ├── stories
-│   └── Foo.js
+│   └── Component.js
 ├── storybook
 │   ├── config.js
 │   └── webpack.config.js
@@ -44,12 +42,15 @@ $ npm install
 │   ├── helpers
 │   │   └── setup.js
 │   └── specs
-│       └── Foo.spec.js
+│       └── Component.spec.js
 ├── .babelrc
 ├── .editorconfig
 ├── .eslintrc
 ├── .gitignore
 ├── .npmignore
+├── .travis.yml
+├── CONTRIBUTING.md
+├── LICENSE.md
 ├── Readme.md
 └── package.json
 ```
