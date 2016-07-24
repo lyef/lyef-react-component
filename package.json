@@ -35,6 +35,7 @@
   "homepage": "https://github.com/lyef/lyef-react-component#README",
   "devDependencies": {
     "@kadira/storybook": "^1.38.0",
+    "@kadira/storybook-deployer": "^1.0.0",
     "assert-equal-jsx": "^1.0.3",
     "babel-cli": "^6.11.4",
     "babel-core": "^6.10.4",
@@ -62,7 +63,6 @@
     "style-loader": "^0.13.1"
   },
   "dependencies": {
-    "@kadira/storybook-deployer": "^1.0.0",
     "react": "^15.2.1",
     "react-dom": "^15.2.1"
   }
