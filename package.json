@@ -4,7 +4,9 @@
   "description": "An opinionated boilerplate for reusable and declouped react components.",
   "main": "dist/Component.js",
   "scripts": {
-    "build": "npm run clean && ./node_modules/.bin/babel src -d dist",
+    "build": "npm run clean && npm run babel && npm run minify",
+    "babel": "./node_modules/.bin/babel src -d dist",
+    "minify": "./node_modules/.bin/uglifyjs -c -m -o dist/Component.min.js dist/Component.js",
     "pub": "npm run build && npm publish",
     "clean": "rimraf dist",
     "start": "npm run storybook",
@@ -60,7 +62,8 @@
     "rimraf": "^2.5.3",
     "sinon": "^1.17.4",
     "sinon-chai": "^2.8.0",
-    "style-loader": "^0.13.1"
+    "style-loader": "^0.13.1",
+    "uglify-js": "^2.7.0"
   },
   "dependencies": {
     "react": "^15.2.1",
