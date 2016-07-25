@@ -20,6 +20,12 @@
     "lint:fix": "./node_modules/.bin/eslint src --fix",
     "prepush": "npm run lint && npm test"
   },
+  "nyc": {
+    "exclude": [
+      "tests",
+      "dist"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/lyef/lyef-react-component.git"
