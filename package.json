@@ -2,11 +2,11 @@
   "name": "lyef-react-component",
   "version": "0.1.0",
   "description": "An opinionated boilerplate for reusable and declouped react components.",
-  "main": "dist/Component.js",
+  "main": "dist/Main.js",
   "scripts": {
     "build": "npm run clean && npm run babel && npm run minify",
     "babel": "./node_modules/.bin/babel src -d dist",
-    "minify": "./node_modules/.bin/uglifyjs -c -m -o dist/Component.min.js dist/Component.js",
+    "minify": "./node_modules/.bin/uglifyjs -c -m -o dist/Main.min.js dist/Main.js",
     "pub": "npm run build && npm publish",
     "clean": "rimraf dist",
     "start": "npm run storybook",

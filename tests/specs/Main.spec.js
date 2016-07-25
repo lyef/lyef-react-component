@@ -2,7 +2,7 @@ import React from 'react';
 import { expect } from 'chai';
 import { shallow } from 'enzyme';
 import assertEqualJSX from 'assert-equal-jsx';
-import Component from '../../src/Component';
+import Component from '../../src/Main';
 
 describe('Component Hello', () => {
 

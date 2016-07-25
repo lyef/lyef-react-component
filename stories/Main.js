@@ -1,5 +1,5 @@
 import React from 'react';
-import Component from '../src/Component'; // This is our component
+import Component from '../src/Main'; // This is our component
 import { storiesOf } from '@kadira/storybook';
 
 storiesOf('Component', module)

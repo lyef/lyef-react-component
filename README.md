@@ -34,9 +34,9 @@ $ npm install
 ├── css
 │   └── main.css
 ├── src
-│   └── Component.js
+│   └── Main.js
 ├── stories
-│   └── Component.js
+│   └── Main.js
 ├── storybook
 │   ├── config.js
 │   └── webpack.config.js
@@ -44,7 +44,7 @@ $ npm install
 │   ├── helpers
 │   │   └── setup.js
 │   └── specs
-│       └── Component.spec.js
+│       └── Main.spec.js
 ├── .babelrc
 ├── .editorconfig
 ├── .eslintrc
