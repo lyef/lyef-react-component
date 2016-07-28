@@ -1,7 +1,7 @@
 # Lyef React Component
 [![Build Status](https://travis-ci.org/lyef/lyef-react-component.svg)](https://travis-ci.org/lyef/lyef-react-component/)
-![Minified component file size](https://badge-size.herokuapp.com/lyef/lyef-react-component/master/dist/Component.min.js.svg)
-![Gziped component file size](https://badge-size.herokuapp.com/lyef/lyef-react-component/master/dist/Component.min.js.svg?compression=gzip)
+![Minified component file size](https://badge-size.herokuapp.com/lyef/lyef-react-component/master/dist/Main.min.js.svg)
+![Gziped component file size](https://badge-size.herokuapp.com/lyef/lyef-react-component/master/dist/Main.min.js.svg?compression=gzip)
 
 ## Stack
 
