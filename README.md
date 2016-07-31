@@ -161,9 +161,9 @@ We believe that start to code shouldn't be hard, so you don't need to concern ab
 
 ## Code Standarts
 
-This project uses [eslint](http://eslint.org/) and [.editorconfig](http://editorconfig.org/) is defined to have indent_size of **4 spaces**. You can change that on `.eslintrc` file.
+This project uses [eslint](http://eslint.org/) and [.editorconfig](http://editorconfig.org/) is defined to have indent_size of **4 spaces**. You can change that on [.eslintrc](https://github.com/lyef/lyef-react-component/blob/master/.eslintrc#L16) file.
 
-This project also uses [Husky](https://github.com/typicode/husky) to prevent to push code with lint errors or broken tests. If you don't want this, you can uninstall running `npm uninstall --save-dev husky` and deleting the [prepush command](https://github.com/lyef/lyef-react-component/blob/master/package.json) on `package.json`.
+This project also uses [Husky](https://github.com/typicode/husky) to prevent to push code with lint errors or broken tests. If you don't want this, you can uninstall running `npm uninstall --save-dev husky` and deleting the [prepush command](https://github.com/lyef/lyef-react-component/blob/master/package.json#L21) on `package.json`.
 
 ## Contributing
 
