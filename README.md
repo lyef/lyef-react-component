@@ -104,7 +104,7 @@ We encourage everyone to write tests to your components, this can help us to cre
 
 - `npm test`: run your tests in a single-run mode.
 - `npm run test:tdd`: run and keep watching your test files.
--  `npm run test:coverage`: prints and create html files by istanbul coverage.
+- `npm run test:coverage`: prints and create html files by istanbul coverage.
 
 ### Linting your code
 
