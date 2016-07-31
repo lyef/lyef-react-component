@@ -4,30 +4,17 @@
 ![Gziped component file size](https://badge-size.herokuapp.com/lyef/lyef-react-component/master/dist/Main.min.js.svg?compression=gzip)
 [![NPM version](https://badge-me.herokuapp.com/api/npm/lyef-react-component.png)](http://badges.enytc.com/for/npm/lyef-react-component)
 
-## Stack
+> An opinionated boilerplate for reusable and declouped react components.
 
-- [React/React-DOM/React-addons-test-utils 15.x](https://facebook.github.io/react/)
-- [Babel 6](https://babeljs.io/) - Javascript Compiler.
-- [React Storybook](https://github.com/kadirahq/react-storybook) - Isolated environment for your components.
-- [Eslint](http://eslint.org/) - The pluggable linting utility for JavaScript and JSX.
-- [Husky](https://github.com/typicode/husky) - Git hooks made easy.
-- [Mocha](https://mochajs.org/) - JavaScript test framework.
-- [Chai](http://chaijs.com/) - BDD / TDD assertion library.
-- [Sinon](http://sinonjs.org/) - Standalone test spies, stubs and mocks for JavaScript.
-- [Nyc](https://github.com/istanbuljs/nyc) - Istanbul command line interface.
-- [Enzyme](http://airbnb.io/enzyme/) - JavaScript Testing utility for React.
-- [JSDOM](https://github.com/tmpvar/jsdom) - A JavaScript implementation of the WHATWG DOM and HTML standards.
+The main idea of this project was based on develop decoupled components in a isolated environment. We don't need to use an entire application to build our components, we just need some place to run and test them.
 
 ## Getting Started
 
 ### Installation
 
-First of all, install the dependencies to run this boilerplate.
+For now, you can clone this repo or use the [slush generator](https://github.com/lyef/slush-lyef-react). We are creating a [CLI](https://github.com/lyef/lyef-react-cli) also.
 
-```sh
-# install dependencies
-$ npm install
-```
+**You’ll need to have Node >= 4 on your machine.** We recommend to use Node >= 6 and npm >= 3 for faster installation speed and better disk usage.
 
 ### Folders and Files
 
@@ -58,31 +45,129 @@ $ npm install
 └── package.json
 ```
 
-### How to Develop with Storybook
+## Creating your Component
 
-Create your [storybook stories](https://github.com/kadirahq/react-storybook/blob/master/docs/writing_stories.md) on `stories` folder. If you want to create another story file, remember to load on `.storybook/config.js`. With all stories, just run `npm run storybook` to open your isolated environment.
+### Writing your code
 
-If you want to know more about storybook, [see this link](https://github.com/kadirahq/react-storybook).
+Write your component code on `src/Main.js`, you can create another files for composable components also.
 
-### Code Standarts
+```js
+import React, { PropTypes } from 'react';
 
-This project uses [eslint](http://eslint.org/) and [.editorconfig](http://editorconfig.org/) is defined to have indent_size of **4 spaces**.
+const Component = ({ name }) => (
+    <h1>Hello {name}!</h1>
+);
 
-This project also uses [Husky](https://github.com/typicode/husky) to prevent push messy and wrong code. Please, don't be stupid, fix all errors before push =D
+Component.propTypes = {
+    name: PropTypes.string.isRequired,
+};
 
-### Tasks
+export default Component;
+```
 
-* `npm start`: start to develop on storybook.
-* `npm run build`: build component to external use.
-* `npm run pub`: build and publish the component to npm.
-* `npm run storybook`: launch storybook to develop your component.
-* `npm run build-storybook`: build an static storybook to `.out` folder.
-* `npm run deploy-storybook`: build and deploy a storybook with component to gh-pages.
-* `npm run test`: run all specs.
-* `npm run test:tdd`: run all specs and watch.
-* `npm run test:coverage`: run all specs and coverage.
-* `npm run lint`: lint all files searching for errors.
-* `npm run lint:fix`: fix some lint errors.
+### Writing Stories
+
+![React Storybook Example Image](images/storybook-example.gif)
+
+Stories are like behavior or states that our components should have. Such as an activated button, labels, whatever your component can change by props/states.
+
+You can also see them as user stories for the agile development.
+
+To understand more about that, I suggest you to read the [storybook stories guide](https://github.com/kadirahq/react-storybook/blob/master/docs/writing_stories.md). Follow the example above:
+
+```js
+storiesOf('Component', module)
+    .add('with lyef name', () => (
+        <Component name="lyef" />
+    ))
+    .add('with another name', () => (
+        <Component name="another" />
+    ))
+```
+
+Every new story will be available on the left side panel of React Storybook to see different cases.
+
+### Running your code
+
+![Terminal running the code](images/storybook-run.gif)
+
+Just use `npm start`, Runs the app in development mode.
+Open [http://localhost:9001](http://localhost:9001) to view it in the browser.
+
+The page will reload if you make edits and you will see the build errors and lint warnings in the console.
+
+### Running tests
+
+![Terminal running tests](images/tests.gif)
+
+We encourage everyone to write tests to your components, this can help us to create a more maintainable and free of bugs component. To do that, we create 3 tasks:
+
+- `npm test`: run your tests in a single-run mode.
+- `npm run test:tdd`: run and keep watching your test files.
+-  `npm run test:coverage`: prints and create html files by istanbul coverage.
+
+### Linting your code
+
+In order to keep your code clean and consistent we use [eslint](http://eslint.org/) with [Airbnb preset](https://github.com/airbnb/javascript/tree/master/react). We have 2 tasks for this:
+
+- `npm run lint`: lint all files searching for errors.
+- `npm run lint:fix`: fix automaticaly some lint errors.
+
+### Deploy your component
+
+![Terminal running deploy](images/deploy.png)
+
+You can deploy your component (inside Storybook) to `github pages` running the command `npm run deploy-storybook`.
+
+## Why use this?
+
+We believe that start to code shouldn't be hard, so you don't need to concern about configurations and tools, just create your pretty stuff. With this structure, your environment will have everything you need to build a modern React Component:
+
+- React, JSX and ES6 support with Babel.
+- A dev server with live reload
+- Stack for tests
+- Linters
+- A build script to compile and minify for production
+
+## What we use?
+
+#### Environment
+
+[React Storybook](https://github.com/kadirahq/react-storybook) - *to tell stories with different behaviors of the component and provide an example page.*
+
+#### Style Guide
+
+- [EditorConfig](http://editorconfig.org/) - *standardize some general settings among multiple editors*
+- [ESLint](http://eslint.org/) - *for reporting the patterns of code*
+  - [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+  - **Plugins**
+    - [React](https://github.com/yannickcr/eslint-plugin-react)
+    - [A11y](https://github.com/evcohen/eslint-plugin-jsx-a11y)
+    - [Import](https://github.com/benmosher/eslint-plugin-import)
+
+#### Tests
+- [Mocha](https://github.com/mochajs/mocha) - *test framework*
+- [Chai](https://github.com/chaijs/chai) - *assertions*
+- [Enzyme](https://github.com/airbnb/enzyme) - *shallow component*
+- [Jsdom](https://github.com/tmpvar/jsdom) - *mock the browser*
+
+#### Compiler
+
+- [babel](https://babeljs.io/)
+  - **Plugins**
+    - [Airbnb](https://github.com/airbnb/babel-preset-airbnb)
+    - [ES2015](https://www.npmjs.com/package/babel-preset-es2015)
+    - [React](https://www.npmjs.com/package/babel-preset-react)
+
+## Code Standarts
+
+This project uses [eslint](http://eslint.org/) and [.editorconfig](http://editorconfig.org/) is defined to have indent_size of **4 spaces**. You can change that on `.eslintrc` file.
+
+This project also uses [Husky](https://github.com/typicode/husky) to prevent to push code with lint errors or broken tests. If you don't want this, you can uninstall running `npm uninstall --save-dev husky` and deleting the [prepush command](https://github.com/lyef/lyef-react-component/blob/master/package.json) on `package.json`.
+
+## Contributing
+
+We'd love to have your helping hand on our lyef-react-component! See [CONTRIBUTING.md](https://github.com/lyef/lyef-react-component/blob/master/CONTRIBUTING.md) for more information on what we're looking for and how to get started.
 
 ## License
 
