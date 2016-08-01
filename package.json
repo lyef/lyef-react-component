@@ -1,6 +1,6 @@
 {
   "name": "lyef-react-component",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "An opinionated boilerplate for reusable and declouped react components.",
   "main": "dist/Main.js",
   "scripts": {
@@ -44,6 +44,7 @@
   "devDependencies": {
     "@kadira/storybook": "^1.38.0",
     "@kadira/storybook-deployer": "^1.0.0",
+    "@personare/react-storybook-decorator-github-corner": "^0.1.4",
     "assert-equal-jsx": "^1.0.3",
     "babel-cli": "^6.11.4",
     "babel-core": "^6.10.4",
