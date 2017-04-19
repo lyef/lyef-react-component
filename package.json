@@ -18,7 +18,8 @@
     "test:coverage": "./node_modules/.bin/nyc --reporter=html --reporter=text ./node_modules/.bin/mocha tests/helpers/setup.js tests/specs/**/*.spec.js",
     "lint": "./node_modules/.bin/eslint src",
     "lint:fix": "./node_modules/.bin/eslint src --fix",
-    "prepush": "npm run lint && npm test"
+    "prepush": "npm run lint && npm test",
+    "prepublish": "npm run test && npm run build"
   },
   "nyc": {
     "exclude": [
