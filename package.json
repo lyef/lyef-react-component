@@ -1,6 +1,6 @@
 {
   "name": "lyef-react-component",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "An opinionated boilerplate for reusable and declouped react components.",
   "main": "dist/Main.js",
   "scripts": {
