@@ -1,6 +1,6 @@
 import React from 'react';
 import Component from '../src/Main'; // This is our component
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 
 storiesOf('Component', module)
     .add('with lyef name', () => (
