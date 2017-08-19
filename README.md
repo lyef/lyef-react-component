@@ -52,7 +52,8 @@ For now, you can clone this repo or use the [slush generator](https://github.com
 Write your component code on `src/Main.js`, you can create another files for composable components also.
 
 ```js
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const Component = ({ name }) => (
     <h1>Hello {name}!</h1>
