@@ -74,7 +74,7 @@ Stories are like behavior or states that our components should have. Such as an 
 
 You can also see them as user stories for the agile development.
 
-To understand more about that, I suggest you to read the [storybook stories guide](https://github.com/kadirahq/react-storybook/blob/master/docs/writing_stories.md). Follow the example above:
+To understand more about that, I suggest you to read the [storybook stories guide](https://storybook.js.org/basics/guide-react/). Follow the example above:
 
 ```js
 storiesOf('Component', module)
