@@ -1,3 +1,6 @@
+var Enzyme = require('enzyme');
+var Adapter = require('enzyme-adapter-react-16');
+
 require('babel-register')();
 
 var jsdom = require('jsdom').jsdom;
@@ -18,3 +21,5 @@ global.navigator = {
 };
 
 documentRef = document;
+
+Enzyme.configure({ adapter: new Adapter() });
